@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlatformGame : MonoBehaviour
+public class TerrainRotator : MonoBehaviour
 {
     private float _horizontalInput;
     private float _verticalInput;
@@ -10,7 +10,7 @@ public class PlatformGame : MonoBehaviour
     [SerializeField] private float _lerpFactor;
     [SerializeField] private Transform _player;
 
-    void Update()
+    private void Update()
     {
         InclineTerrain();
         FlattenTerrain();
